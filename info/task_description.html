@@ -4,8 +4,9 @@
     You are given {% if is_js %}an Object{% else %}a dictionary{% endif %}.
     Your function should return {% if is_js %}an Object{% else %}a dictionary{% endif %}
     as well, where keys and values from input {% if is_js %}Object{% else %}dictionary{% endif %} are switched:
-    input keys become output values and vice versa. Looks easy? It is so! The only
-    trick is that everything (keys and values) in the new {% if is_js %}Object{% else %}dictionary{% endif %}
+    input keys become output values and vice versa. Looks easy? It is so! The only two things more:
+    the values in the result {% if is_js %}Object{% else %}dictionary{% endif %} should be sets, 
+    keys and elements of values sets in the new {% if is_js %}Object{% else %}dictionary{% endif %}
     should be of the string type. Good luck!
 </p>
 
