@@ -15,15 +15,15 @@ TESTS = {
             "answer": {"red": {"rouses", "car"}, "blue": {"sky"}},
         },
         {
-            "input": [{1: 1, 2: 2, 3: 3, 4: 4}],
-            "answer": {"1": {"1"}, "2": {"2"}, "3": {"3"}, "4": {"4"}},
-        }
-    ],
-    "Extra": [
+            "input": [{"1": "one", "2": "two", "3": "one", "4": "two"}],
+            "answer": {"one": {"1", "3"}, "two": {"2", "4"}},
+        },
         {
             "input": [{"a": "b", "b": "c", "c": "a"}],
             "answer": {"b": {"a"}, "c": {"b"}, "a": {"c"}},
-        },
+        }
+    ],
+    "Extra": [
         {
             "input": [{"": "", "a": "", "b": "", "c": ""}],
             "answer": {"": {"", "a", "b", "c"}},
@@ -33,16 +33,20 @@ TESTS = {
             "answer": {"2": {"2"}},
         },
         {
-            "input": [{0: "zero"}],
+            "input": [{"0": "zero"}],
             "answer": {"zero": {"0"}},
         },
         {
-            "input": [{2: "number", 1: "bool", "text": "string", "3": "string", 100.0: "number"}],
-            "answer": {"number": {"2", "100.0"}, "bool": {"1"}, "string": {"3", "text"}},
+            "input": [{"True": "bool", "text": "string", "2": "string", "100.0": "number"}],
+            "answer": {"string": {"text", "2"}, "bool": {"True"}, "number": {"100.0"}},
         },
         {
-            "input": [{1: "number", 2: "number", 3: "number"}],
+            "input": [{"1": "number", "2": "number", "3": "number"}],
             "answer": {"number": {"1", "2", "3"}},
+        },
+        {
+            "input": [{"Mile": "student", "Jeff": "pupil", "Frank": "pupil"}],
+            "answer": {"student": {"Mile"}, "pupil": {"Frank", "Jeff"}},
         }
     ]
 }
