@@ -1,0 +1,26 @@
+<!-- Describe task in general -->
+
+<p>
+    Sie erhalten {% if is_js %}ein Objekt{% else %}ein Wörterbuch{% endif %}, wobei Schlüssel und Werte Strings sind.
+    Ihre Funktion sollte {% if is_js %}ein Object{% else %}ein Wörterbuch zurückgeben{% endif %}
+    zurückgeben, in dem die Schlüssel und Werte des {% if is_js %}Object{% else %}dictionary{% endif %} vertauscht sind:
+    eingabeschlüssel werden zu Ausgabewerten und andersherum. Sieht einfach aus? Ist es auch! Das Einzige, was noch zu erwähnen ist:
+    die Werte im Ergebnis {% if is_js %}Object{% else %}dictionary{% endif %} sollten gesetzt sein
+    (sein (also der/die Eingabeschlüssel - das/die Element(e) der Menge). Viel Erfolg!
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> {% if is_js %}Ein Objekt{% else %}Ein Wörterbuch{% endif %}.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> {% if is_js %}Ein Objekt{% else %}Ein Wörterbuch{% endif %}.
+</p>
+
+
+<p>
+    <strong>Beispiele:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
